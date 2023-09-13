@@ -1,11 +1,12 @@
 fundamentos do typescript:
 configurar o node.js:
 
-npm i -D typescript # para instalar o compilador de typescript
-npm i -D nodemon # para atulizar sempre o programa para compilar em javascrip
-npm i -D ts-node # para compilar typescript para javascrip
-npx tsc --init # fará com que o arquivo tsconfig.ts seja criado na raiz do seu projeto
-configurar o tsconfig.ts com os seguintes dados:
+* npm init -y # criar o node padrão
+* npm i -D typescript # para instalar o compilador de typescript
+* npm i -D nodemon # para atulizar sempre o programa para compilar em javascrip
+* npm i -D ts-node # para compilar typescript para javascrip
+* npx tsc --init # fará com que o arquivo tsconfig.ts seja criado na raiz do seu projeto
+* configurar o tsconfig.ts com os seguintes dados:
 {
   "compilerOptions": {
     "outDir": "dist",
@@ -18,12 +19,13 @@ configurar o tsconfig.ts com os seguintes dados:
     "esm": true
   },
 }
-criar pasta src # aqui que ira ficar nossos aps e programas
+* criar pasta src # aqui que ira ficar nossos aps e programas
 
-na pasta package.json adicionar 
+* na pasta package.json adicionar na parte scripts 
 "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.ts"
   },
 
+* adicionar um arquivo .gitignore com com especifiacação para nodes
 pronto o node esta configurado para rodar o typescript 
