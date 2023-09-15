@@ -1,0 +1,21 @@
+basicamentr duas coisas mudam uma no arquivo 
+no arquivo tsconfig tenha certeza que 
+{
+  "compilerOptions": {
+    "outDir": "dist", <==== esta configurado com dist
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "baseUrl": "src", * tambem não pode esqueçer 
+  },
+  "ts-node": {
+    "esm": true
+  },
+}
+e 
+no package.json esta configurado neste formato 
+"scripts": {
+  "build": "npx tsc",
+  "start": "node dist/src/app.js",
+  "dev": "nodemon app.ts"
+}
